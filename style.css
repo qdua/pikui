@@ -29,6 +29,8 @@ img {
     border-radius: 8px;
     box-shadow: 0 4vmin 16vmin -4vmin var(--black);
     max-width: 200px;
+    position: relative;
+    width: 100%;
 }
 
 #modal {
@@ -38,7 +40,9 @@ img {
     height: 100vh;
     place-items: center;
     position: fixed;
+    transition: .2s linear;
     width: 100vw;
+    z-index: 100000;
 }
 
 #modal s {
@@ -48,6 +52,7 @@ img {
     position: absolute;
     right: 4vw;
     text-decoration: none;
+    text-shadow: 0 1vmin 2vmin var(--grey);
     top: 4vh;
 }
 
@@ -56,10 +61,10 @@ img {
 }
 
 #modal img {
-    max-height: 80vh;
-    max-width: 80vw;
-    position: absolute;
-    width: 100%;
+    bottom: 1vmin;
+    max-width: 80vmin;
+    opacity: 0;
+    transition: .2s linear;
 }
 
 #modal span {
