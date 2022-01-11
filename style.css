@@ -33,7 +33,8 @@ img {
     width: 100%;
 }
 
-#modal {
+
+/* #pikui {
     background: var(--dark);
     bottom: 0;
     display: grid;
@@ -45,7 +46,7 @@ img {
     z-index: 100000;
 }
 
-#modal s {
+#pikui s {
     color: var(--black);
     cursor: pointer;
     font: normal 4vmin/1 sans-serif;
@@ -56,11 +57,11 @@ img {
     top: 4vh;
 }
 
-#modal s::after {
+#pikui s::after {
     content: "\2715";
 }
 
-#modal img {
+#pikui img {
     bottom: 1vmin;
     max-width: 80vmin;
     opacity: 0;
@@ -68,8 +69,8 @@ img {
     transition: .2s linear;
 }
 
-#modal span {
+#pikui span {
     bottom: 2vh;
     position: absolute;
     text-align: center;
-}
+} */
