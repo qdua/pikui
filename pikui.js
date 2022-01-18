@@ -29,6 +29,11 @@ for (let rule in rules) {
 }
 
 for (var i = 0; i < document.images.length; i++) {
+    let link = document.querySelectorAll('a[data-pikui]')[i]
+
+    function stoplink(el) { el.preventDefault() }
+    link.addEventListener('click', stoplink, false)
+
     let pikui = document.querySelectorAll('a[data-pikui] > img')[i]
 
     pikui.onclick = function() {
